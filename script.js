@@ -17,12 +17,11 @@ function toggleReflexion() {
 }
 
 // Sonido al pasar el ratón por imágenes
-document.querySelectorAll("img").forEach(img => {
-  img.addEventListener("mouseenter", () => {
-    const sound = document.getElementById("hoverSound");
-    if (sound) {
-      sound.currentTime = 0;
-      sound.play();
+img.addEventListener("click", () => {
+  const sound = document.getElementById("hoverSound");
+  if (sound) {
+    sound.currentTime = 0;
+    sound.play();
     }
   });
 });
